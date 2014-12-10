@@ -16,7 +16,7 @@ out-of-the-box monitoring of Apache HTTP Server performance data. The FastPack c
 | Support | [Not Supported ](https://community.compuwareapm.com/community/display/DL/Support+Levels#SupportLevels-Community)
 
 
-###FastPack Contents Fastpack Download ([for 5.5](attachments_137756839_1_dynaTrace_Apache_FastPack_dt55.dtp)) contains:
+###FastPack Contents Fastpack Download ([for 5.5](dynaTrace_Apache_FastPack_dt55.dtp)) contains:
 
   * Apache Server Performance Dashboard 
 
