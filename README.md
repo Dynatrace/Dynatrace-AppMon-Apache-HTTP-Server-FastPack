@@ -5,4 +5,3 @@ out-of-the-box monitoring of Apache HTTP Server performance data. The FastPack c
 
 Find further information in the [dynaTrace community](https://community.compuwareapm.com/community/display/DL/Apache+HTTP+Server+FastPack)     
 
-For downloads go to [releases](https://github.com/dynaTrace/Dynatrace-Apache-Hadoop-and-MapReduce-FastPack/releases)
