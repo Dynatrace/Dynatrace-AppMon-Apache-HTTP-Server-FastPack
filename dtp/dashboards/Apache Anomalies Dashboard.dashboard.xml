@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ATTENTION - THIS IS AN AUTOMATICALLY GENERATED FILE -->
+<!-- Manual changes can cause severe problems and system instability -->
+<!-- Apply manual changes only if you have received explicit instructions from dynaTrace Support -->
+<dynatrace version="4.0.0.2599" date="11/25/11 11:17 AM">
+  <dashboardconfig memento.version="4.0.0.2599" icon="com.dynatrace.diagnostics.sdk/default.gif" sessiontype="live" locationassource="true" authorname="admin" opendrilldowninnewdashboard="true" sessionid="Template_Apache" bgcolor="255,255,255,255" modified="1970-01-01T01:00:00+0100" id="0e23e739-8801-4812-a6b5-b623540e909d" revision="00000000-0000-0000-8277-30c50edda82c" created="2011-03-30T14:30:17+0200" description="" name="Anomalies Dashboard - Apache" modifiedbyname="wolfgang.gottesheim" locationascomparesource="false">
+    <reportconfig lines.per.table="100" enabled="true" print.legends="true" orientation="portrait" pagesize="A4" type="PDF" title="" override="false" levels.per.tree="10" description="" print.images="true" formatpdf="PDF Report" />
+    <filter>
+      <criterion completepurepath="true" type="agents" mode="all">
+        <textpattern enabled="true" name="agentname" type="contains" />
+        <textpattern enabled="true" name="agenthost" type="contains" />
+      </criterion>
+      <criterion excludeexternalsubpaths="false" type="api" mode="all" />
+      <criterion type="applications" mode="all" />
+      <criterion showrendering="true" isactive="true" shownetwork="true" showjavascript="true" type="browserpathtype" />
+      <criterion timerenabled="false" pageenabled="false" type="browsersectionfilter">
+        <timername>
+          <stringmatchpattern text="" match="contains" />
+        </timername>
+        <pageurl>
+          <stringmatchpattern text="" match="contains" />
+        </pageurl>
+      </criterion>
+      <criterion type="btm" />
+      <criterion isactive="true" analyzeserverpath="true" type="enduserpath" analyzeenduserpath="true" />
+      <criterion completepurepath="true" type="hosts" mode="all" />
+      <criterion severities="" statesmode="all" severitiesmode="all" states="" rulesmode="all" type="incident" />
+      <criterion type="purepaths" mode="all" />
+      <criterion showrendering="true" isactive="false" shownetwork="true" showjavascript="true" type="riapurepathtype" requestcriterion="ALL" />
+      <criterion includemeasurename="true" includetestname="true" type="tests" teststatus="OK" />
+      <criterion enabled="false" filterbyid="false" type="threads" />
+      <criterion type="timeframe">
+        <timeframe type="Last 72h" />
+      </criterion>
+      <criterion type="visits">
+        <visitidset visitsidsetsize="0" />
+      </criterion>
+      <criterion type="webpage">
+        <textpattern enabled="true" name="timerName" type="contains" />
+        <textpattern enabled="true" name="pageContext" type="contains" />
+      </criterion>
+      <criterion type="webrequest">
+        <filteruripattern>
+          <stringmatchpattern text="" match="contains" />
+        </filteruripattern>
+        <filterquerypattern>
+          <stringmatchpattern text="" match="contains" />
+        </filterquerypattern>
+      </criterion>
+    </filter>
+    <autorefreshconfig unit="MINUTES" enabled="true" time="5" />
+    <designconfig descriptionalignment="CENTER" descriptionfontstyle="NORMAL" namealignment="CENTER" descriptionfontsize="8" nameshow="true" clienttheme="DEFAULT" headertype="DEFAULT" namefontsize="10" descriptionshow="true" autoadjustfontsizes="false" namefontstyle="BOLD" descriptionfontcolor="128,128,128" />
+    <dashboardlayout>
+      <portletfolder relationtype="LEFT" ratio="0.95" folderid="org.eclipse.ui.internal.ViewStack@16a9205" selectionindex="-1" isplaceholder="true" relatedfolderid="DashboardLayout.blankArea" portletconfigorder="" />
+      <portletfolder relationtype="BOTTOM" ratio="0.49944383" folderid="4b1b6277-121f-49a5-a963-cd56f3a3800c" selectionindex="0" relatedfolderid="org.eclipse.ui.internal.ViewStack@16a9205" portletconfigorder="4e56841e-f3da-4c0f-9998-d33a0b70e60e">
+        <designconfig descriptionalignment="CENTER" descriptionfontstyle="NORMAL" namealignment="CENTER" inherited="true" descriptionfontsize="8" nameshow="true" headertype="DEFAULT" namefontsize="10" descriptionshow="true" namefontstyle="BOLD" descriptionfontcolor="128,128,128" />
+      </portletfolder>
+      <portletfolder relationtype="RIGHT" ratio="0.13965744" folderid="org.eclipse.ui.internal.ViewStack@139cfe8" selectionindex="0" relatedfolderid="4b1b6277-121f-49a5-a963-cd56f3a3800c" portletconfigorder="f1bbe0b0-cc9b-4e09-898d-e01e4a43efd5">
+        <designconfig descriptionalignment="CENTER" descriptionfontstyle="NORMAL" namealignment="CENTER" inherited="true" descriptionfontsize="8" nameshow="true" headertype="DEFAULT" namefontsize="10" descriptionshow="true" namefontstyle="BOLD" descriptionfontcolor="128,128,128" />
+      </portletfolder>
+      <portletfolder relationtype="RIGHT" ratio="0.5770751" folderid="org.eclipse.ui.internal.ViewStack@1eee92e" selectionindex="-1" isplaceholder="true" relatedfolderid="org.eclipse.ui.internal.ViewStack@16a9205" portletconfigorder="" />
+    </dashboardlayout>
+    <portletconfig icon="com.dynatrace.diagnostics.sdk/default.gif" usespecificautorefresh="false" usedashboardsourceforcompare="true" folderid="org.eclipse.ui.internal.ViewStack@139cfe8" sessiontype="live" locationassource="true" usedashboardsource="true" sessionid="Template_Apache" bgcolor="236,233,216,255" id="f1bbe0b0-cc9b-4e09-898d-e01e4a43efd5" addfilterinfo="false" description="" lastvalue="false" name="Anomalies Table" typeid="com.dynatrace.diagnostics.portlets.chart.Incident" ismaster="false" locationascomparesource="false">
+      <reportconfig lines.per.table="100" print.legends="true" enabled="true" levels.per.tree="10" override="false" print.images="true" reportposition="2" />
+      <filter>
+        <criterion completepurepath="true" type="agents" mode="all">
+          <textpattern enabled="true" name="agentname" type="contains" />
+          <textpattern enabled="true" name="agenthost" type="contains" />
+        </criterion>
+        <criterion type="btm" />
+        <criterion completepurepath="true" type="hosts" mode="all" />
+        <criterion type="timeframe">
+          <timeframe type="Last 72h" />
+        </criterion>
+        <inheritancemap />
+      </filter>
+      <autorefreshconfig unit="MINUTES" enabled="true" time="5" />
+      <sashconfig weights="500,500" displayoption="TABLE" />
+      <datamodelconfig>
+        <table drawcolumn="-1" name="The Incidents table" sortcolumn="3" structuremode="hierarchicalincident" columnorder="0,1,2,3,4,5,6,7">
+          <column index="0" sort="None" forcevisible="false" hidden="false" width="349" />
+          <column index="1" sort="None" forcevisible="false" hidden="false" width="20" />
+          <column index="2" sort="Up" forcevisible="false" hidden="false" width="120" />
+          <column index="3" sort="Up" forcevisible="false" hidden="false" width="120" />
+          <column index="4" sort="None" forcevisible="false" hidden="false" width="91" />
+          <column index="5" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="6" sort="None" forcevisible="false" hidden="false" width="780" />
+          <column index="7" sort="None" forcevisible="false" hidden="false" width="251" />
+        </table>
+        <chart maxdisplayitems="10" axis.x.title="" legendposition="Bottom" zoomable="true" showtooltips="true" charttype="IncidentTrafficLight" resolution="Auto" isentitymarkable="false" title="" showlabels="true" yaxisalignment="0" showname="true" splitcharts="true" bounds.y.enabled="false" axis.y.show="true" subchartweights="200,200" orientation="Horizontal" axis.y.title="" axis.y.title.show="false" limititems="false" axis.x.show="true" axis.x.title.show="false" logxaxis="false" showheatfield="true" showvalues="false" showtitle="false" showlegend="true">
+          <legendcomposition measure="true">
+            <pielabelcomposition measure="true" value="true" />
+          </legendcomposition>
+          <chartsource position="1" scale="-2147483648" visible="true" sessiontype="live" dynamicconfig="false" sessionid="Template_Apache" id="b465ead2-7fb2-4cea-9420-c2ff6fee7b8e" displayrate="10s" systemid="Template_Apache" overridesource="false" name="Apache Anomalies" sourcetype="INCIDENT_RULE" autoscale="true">
+            <incidentrule id="Apache Anomalies" flags="1" incidentdashboardname="Incident Dashboard" description="" timeframe="10">
+              <sensitivity id="after60s" duration="60" minnonviolatedperiod="60" delay="0" />
+              <actions>
+                <actionref bundleversion="0.0.0" rolekey="com.dynatrace.diagnostics.logging" smartalert="false" severity="warning" type="Logging Notification" refaction="com.dynatrace.diagnostics.logging" key="com.dynatrace.diagnostics.logging" execution="begin" roletype="1" />
+              </actions>
+            </incidentrule>
+          </chartsource>
+          <splitconfig splitmode="PerSeries" splitlayout="Vertical" />
+        </chart>
+      </datamodelconfig>
+      <dashboardlinks>
+        <link location="online://vm-dynatrace" name="Apache Server Performance" />
+      </dashboardlinks>
+    </portletconfig>
+    <portletconfig icon="com.dynatrace.diagnostics.sdk/default.gif" usespecificautorefresh="false" usedashboardsourceforcompare="true" folderid="4b1b6277-121f-49a5-a963-cd56f3a3800c" sessiontype="live" locationassource="true" usedashboardsource="true" sessionid="Template_Apache" bgcolor="236,233,216,255" id="4e56841e-f3da-4c0f-9998-d33a0b70e60e" addfilterinfo="false" description="" lastvalue="false" name="Anomalies Chart" typeid="com.dynatrace.diagnostics.portlets.chart.Incident" ismaster="false" locationascomparesource="false">
+      <reportconfig lines.per.table="100" print.legends="true" enabled="true" levels.per.tree="10" override="false" print.images="true" reportposition="6" />
+      <filter>
+        <criterion completepurepath="true" type="agents" mode="all">
+          <textpattern enabled="true" name="agentname" type="contains" />
+          <textpattern enabled="true" name="agenthost" type="contains" />
+        </criterion>
+        <criterion type="btm" />
+        <criterion completepurepath="true" type="hosts" mode="all" />
+        <criterion type="timeframe">
+          <timeframe type="Last 72h" />
+        </criterion>
+        <inheritancemap />
+      </filter>
+      <autorefreshconfig unit="MINUTES" enabled="true" time="5" />
+      <sashconfig weights="500,500" displayoption="CHART" />
+      <datamodelconfig>
+        <table drawcolumn="-1" name="The Incidents table" sortcolumn="2" structuremode="hierarchicalincident" columnorder="0,1,2,3,4,5,6,7">
+          <column index="0" sort="None" forcevisible="false" hidden="false" width="150" />
+          <column index="1" sort="None" forcevisible="false" hidden="false" width="20" />
+          <column index="2" sort="Up" forcevisible="false" hidden="false" width="120" />
+          <column index="3" sort="None" forcevisible="false" hidden="false" width="120" />
+          <column index="4" sort="None" forcevisible="false" hidden="false" width="60" />
+          <column index="5" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="6" sort="None" forcevisible="false" hidden="false" width="120" />
+          <column index="7" sort="None" forcevisible="false" hidden="false" width="120" />
+        </table>
+        <chart maxdisplayitems="10" axis.x.title="" legendposition="Bottom" zoomable="true" showtooltips="true" charttype="IncidentTrafficLight" resolution="Auto" isentitymarkable="false" title="" showlabels="true" yaxisalignment="0" showname="true" splitcharts="true" bounds.y.enabled="false" axis.y.show="true" subchartweights="1000" orientation="Horizontal" axis.y.title="" axis.y.title.show="false" limititems="false" axis.x.show="true" axis.x.title.show="false" logxaxis="false" showheatfield="true" showvalues="false" showtitle="false" showlegend="true">
+          <legendcomposition measure="true">
+            <pielabelcomposition measure="true" value="true" />
+          </legendcomposition>
+          <chartsource position="1" scale="-2147483648" visible="true" sessiontype="live" dynamicconfig="false" sessionid="Template_Apache" id="87d1ed7d-a573-418a-b612-56ec0074eadd" displayrate="10s" systemid="Template_Apache" overridesource="false" name="Apache Anomalies" sourcetype="INCIDENT_RULE" autoscale="true">
+            <incidentrule id="Apache Anomalies" flags="1" incidentdashboardname="Incident Dashboard" description="" timeframe="10">
+              <sensitivity id="after60s" duration="60" minnonviolatedperiod="60" delay="0" />
+              <actions>
+                <actionref bundleversion="0.0.0" rolekey="com.dynatrace.diagnostics.logging" smartalert="false" severity="warning" type="Logging Notification" refaction="com.dynatrace.diagnostics.logging" key="com.dynatrace.diagnostics.logging" execution="begin" roletype="1" />
+              </actions>
+            </incidentrule>
+          </chartsource>
+          <splitconfig splitmode="PerSeries" splitlayout="Vertical" />
+        </chart>
+      </datamodelconfig>
+      <dashboardlinks>
+        <link location="online://vm-dynatrace" name="Apache Server Performance" />
+      </dashboardlinks>
+    </portletconfig>
+  </dashboardconfig>
+</dynatrace>
+

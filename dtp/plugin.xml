@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension id="Installer Content" point="com.dynatrace.diagnostics.InstallerContent">
+      <metainfo installer_type="resourcepack" name="Apache FastPack">
+         <resource resource="dashboards/Apache Anomalies Dashboard.dashboard.xml" resource_type="dashboard" />
+         <resource resource="dashboards/Apache Server Performance.dashboard.xml" resource_type="dashboard" />
+         <resource resource="profiles/Template_Apache.profile.xml" resource_type="systemProfile" />
+         <resource resource="plugins/com.mcg.diagnostics.plugins.ApacheMonitor_5.5.0.5226.jar" resource_type="userPlugin" />
+      </metainfo>
+   </extension>
+</plugin>
